@@ -1,0 +1,63 @@
+article {
+    position: relative;
+    border-radius: 16px;
+    box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.649);
+    background: #543a0183;
+    transform-origin: center;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+  }
+  
+  
+  article h2 {
+    margin: 0 0 18px 0;
+    font-family: "Papyrus";
+    font-size: 1.9rem;
+    letter-spacing: 0.06em;
+    color: var(--title-color);
+    transition: color 0.3s ease-out;
+  }
+  
+  figure {
+    margin: 0;
+    padding: 0;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+  }
+  
+  article img {
+    max-width: 100%;
+    transform-origin: center;
+    transform: scale(var(--img-scale));
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .article-body {
+    padding: 24px;
+  }
+  
+  article a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #28666e;
+  }
+  
+  body {
+    margin: 0;
+    padding: 48px 0;
+    font-family: "Papyrus";
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    background-image: linear-gradient(45deg, #7c9885, #b5b682);
+    min-height: 100vh;
+  }
+  
+  .articles {
+    display: grid;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+  }
